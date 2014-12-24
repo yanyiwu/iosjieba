@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		89599B911A49B7100035E27D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89599B901A49B7100035E27D /* main.m */; };
 		89599B941A49B7100035E27D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 89599B931A49B7100035E27D /* AppDelegate.m */; };
-		89599B971A49B7100035E27D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 89599B961A49B7100035E27D /* ViewController.m */; };
+		89599B971A49B7100035E27D /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 89599B961A49B7100035E27D /* ViewController.mm */; };
 		89599B9A1A49B7100035E27D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89599B981A49B7100035E27D /* Main.storyboard */; };
 		89599B9C1A49B7100035E27D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89599B9B1A49B7100035E27D /* Images.xcassets */; };
 		89599B9F1A49B7110035E27D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89599B9D1A49B7100035E27D /* LaunchScreen.xib */; };
 		89599BAB1A49B7110035E27D /* iosjiebaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89599BAA1A49B7110035E27D /* iosjiebaTests.m */; };
 		89599BD61A4A55A60035E27D /* Segmentor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89599BD41A4A55A60035E27D /* Segmentor.cpp */; };
+		89599BD81A4A6FA30035E27D /* iosjieba.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 89599BD71A4A6FA30035E27D /* iosjieba.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +35,7 @@
 		89599B921A49B7100035E27D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		89599B931A49B7100035E27D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		89599B951A49B7100035E27D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		89599B961A49B7100035E27D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		89599B961A49B7100035E27D /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		89599B991A49B7100035E27D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		89599B9B1A49B7100035E27D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		89599B9E1A49B7110035E27D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -73,6 +74,7 @@
 		89599BD31A4A54DC0035E27D /* Trie.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Trie.hpp; sourceTree = "<group>"; };
 		89599BD41A4A55A60035E27D /* Segmentor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Segmentor.cpp; path = ../Segmentor.cpp; sourceTree = "<group>"; };
 		89599BD51A4A55A60035E27D /* Segmentor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Segmentor.h; path = ../Segmentor.h; sourceTree = "<group>"; };
+		89599BD71A4A6FA30035E27D /* iosjieba.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = iosjieba.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +119,7 @@
 				89599B921A49B7100035E27D /* AppDelegate.h */,
 				89599B931A49B7100035E27D /* AppDelegate.m */,
 				89599B951A49B7100035E27D /* ViewController.h */,
-				89599B961A49B7100035E27D /* ViewController.m */,
+				89599B961A49B7100035E27D /* ViewController.mm */,
 				89599B981A49B7100035E27D /* Main.storyboard */,
 				89599B9B1A49B7100035E27D /* Images.xcassets */,
 				89599B9D1A49B7100035E27D /* LaunchScreen.xib */,
@@ -129,6 +131,7 @@
 		89599B8E1A49B7100035E27D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				89599BD71A4A6FA30035E27D /* iosjieba.bundle */,
 				89599BD41A4A55A60035E27D /* Segmentor.cpp */,
 				89599BD51A4A55A60035E27D /* Segmentor.h */,
 				89599BB41A4A54DC0035E27D /* CppJieba */,
@@ -281,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89599B9A1A49B7100035E27D /* Main.storyboard in Resources */,
+				89599BD81A4A6FA30035E27D /* iosjieba.bundle in Resources */,
 				89599B9F1A49B7110035E27D /* LaunchScreen.xib in Resources */,
 				89599B9C1A49B7100035E27D /* Images.xcassets in Resources */,
 			);
@@ -300,7 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89599B971A49B7100035E27D /* ViewController.m in Sources */,
+				89599B971A49B7100035E27D /* ViewController.mm in Sources */,
 				89599B941A49B7100035E27D /* AppDelegate.m in Sources */,
 				89599BD61A4A55A60035E27D /* Segmentor.cpp in Sources */,
 				89599B911A49B7100035E27D /* main.m in Sources */,

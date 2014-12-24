@@ -13,12 +13,18 @@ using namespace CppJieba;
 
 CppJieba::MixSegment * globalSegmentor;
 
-void init(const string& dictPath, const string& hmmPath, const string& userDictPath)
+void JiebaInit(const string& dictPath, const string& hmmPath, const string& userDictPath)
 {
+    if(globalSegmentor == NULL) {
+        globalSegmentor = new MixSegment(dictPath, hmmPath, userDictPath);
+    }
     cout << __FILE__ << __LINE__ << endl;
 }
 
-void cut(const string& sentence, vector<string>& words)
+void JiebaCut(const string& sentence, vector<string>& words)
 {
+    assert(globalSegmentor);
+    globalSegmentor->cut(sentence, words);
     cout << __FILE__ << __LINE__ << endl;
+    cout << words << endl;
 }

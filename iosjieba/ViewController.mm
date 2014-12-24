@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#include "Segmentor.h"
 
 @interface ViewController ()
 
@@ -29,6 +30,22 @@
     textView.delegate = self;
     [self.view addSubview:textView];
     self.view.backgroundColor = [UIColor grayColor];
+    
+    //JiebaInit("123", "123")
+    NSString *dictPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"iosjieba.bundle/dict/jieba.dict.small.utf8"];
+    NSString *hmmPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"iosjieba.bundle/dict/hmm_model.utf8"];
+    NSString *userDictPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"iosjieba.bundle/dict/user.dict.utf8"];
+    
+    NSLog(@"%@",dictPath);
+    NSLog(@"%@",hmmPath);
+    NSLog(@"%@",hmmPath);
+    
+    const char *cDictPath = [dictPath UTF8String];
+    const char *cHmmPath = [hmmPath UTF8String];
+    const char *cUserDictPath = [userDictPath UTF8String];
+    
+    
+    JiebaInit(cDictPath, cHmmPath, cUserDictPath);
     
 }
 
@@ -58,6 +75,10 @@
 - (BOOL)textViewShouldEndEditing:(UITextView *)textView{
     NSLog(@"textViewShouldEndEditing:");
     //textView.backgroundColor = [UIColor whiteColor];
+    const char* sentence = [textView.text UTF8String];
+    std::vector<std::string>& words;
+    JiebaCut(sentence, words);
+    
     textView.text = @"ok";
     return YES;
 }
