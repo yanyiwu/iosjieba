@@ -8,7 +8,7 @@
 
 ## 用法
 
-![image](https://github.com/aszxqw/cppjieba/raw/master/screenshots/welcome.jng)
+![image](https://github.com/aszxqw/cppjieba/raw/master/screenshots/welcome.png)
 
 ![image](https://github.com/aszxqw/cppjieba/raw/master/screenshots/demo1.jng)
 ![image](https://github.com/aszxqw/cppjieba/raw/master/screenshots/demo2.jng)
