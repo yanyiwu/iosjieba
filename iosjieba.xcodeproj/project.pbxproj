@@ -14,8 +14,8 @@
 		89599B9C1A49B7100035E27D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89599B9B1A49B7100035E27D /* Images.xcassets */; };
 		89599B9F1A49B7110035E27D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89599B9D1A49B7100035E27D /* LaunchScreen.xib */; };
 		89599BAB1A49B7110035E27D /* iosjiebaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89599BAA1A49B7110035E27D /* iosjiebaTests.m */; };
-		89599BD61A4A55A60035E27D /* Segmentor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89599BD41A4A55A60035E27D /* Segmentor.cpp */; };
 		89599BD81A4A6FA30035E27D /* iosjieba.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 89599BD71A4A6FA30035E27D /* iosjieba.bundle */; };
+		89599C0D1A4AEF990035E27D /* Segmentor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89599C0B1A4AEF990035E27D /* Segmentor.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,9 +72,9 @@
 		89599BD11A4A54DC0035E27D /* SegmentBase.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SegmentBase.hpp; sourceTree = "<group>"; };
 		89599BD21A4A54DC0035E27D /* TransCode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TransCode.hpp; sourceTree = "<group>"; };
 		89599BD31A4A54DC0035E27D /* Trie.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Trie.hpp; sourceTree = "<group>"; };
-		89599BD41A4A55A60035E27D /* Segmentor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Segmentor.cpp; path = ../Segmentor.cpp; sourceTree = "<group>"; };
-		89599BD51A4A55A60035E27D /* Segmentor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Segmentor.h; path = ../Segmentor.h; sourceTree = "<group>"; };
 		89599BD71A4A6FA30035E27D /* iosjieba.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = iosjieba.bundle; sourceTree = "<group>"; };
+		89599C0B1A4AEF990035E27D /* Segmentor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Segmentor.cpp; sourceTree = "<group>"; };
+		89599C0C1A4AEF990035E27D /* Segmentor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Segmentor.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,9 +131,9 @@
 		89599B8E1A49B7100035E27D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				89599C0B1A4AEF990035E27D /* Segmentor.cpp */,
+				89599C0C1A4AEF990035E27D /* Segmentor.h */,
 				89599BD71A4A6FA30035E27D /* iosjieba.bundle */,
-				89599BD41A4A55A60035E27D /* Segmentor.cpp */,
-				89599BD51A4A55A60035E27D /* Segmentor.h */,
 				89599BB41A4A54DC0035E27D /* CppJieba */,
 				89599B8F1A49B7100035E27D /* Info.plist */,
 				89599B901A49B7100035E27D /* main.m */,
@@ -306,7 +306,7 @@
 			files = (
 				89599B971A49B7100035E27D /* ViewController.mm in Sources */,
 				89599B941A49B7100035E27D /* AppDelegate.m in Sources */,
-				89599BD61A4A55A60035E27D /* Segmentor.cpp in Sources */,
+				89599C0D1A4AEF990035E27D /* Segmentor.cpp in Sources */,
 				89599B911A49B7100035E27D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,6 +498,7 @@
 				89599BB01A49B7110035E27D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		89599BB11A49B7110035E27D /* Build configuration list for PBXNativeTarget "iosjiebaTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +507,7 @@
 				89599BB31A49B7110035E27D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

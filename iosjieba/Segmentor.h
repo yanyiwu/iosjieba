@@ -11,7 +11,7 @@
 
 #include <stdio.h>
 
-#include "iosjieba/CppJieba/MixSegment.hpp"
+#include "CppJieba/MixSegment.hpp"
 #include <string>
 #include <vector>
 

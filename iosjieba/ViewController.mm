@@ -19,19 +19,31 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    CGRect bounds = self.view.bounds;
+    
+    // label
+    
+    UILabel* label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 140, 40)];
+    label.text = @"结巴中文分词";
+    label.tag = 100;
+    label.textAlignment = NSTextAlignmentCenter;
+    
+    label.center = CGPointMake(CGRectGetMidX(bounds), CGRectGetMidY(bounds) * 1 / 4);
+    [self.view addSubview:label];
     
     
     CGRect textViewFrame = CGRectMake(0.0f, 0.0f, 300.0f, 100.0f);
     UITextView *textView = [[UITextView alloc] initWithFrame:textViewFrame];
-    CGRect bounds = self.view.bounds;
+    
     textView.center = CGPointMake(CGRectGetMidX(bounds), CGRectGetMidY(bounds) * 1 / 2);
     textView.returnKeyType = UIReturnKeyDone;
     textView.backgroundColor = [UIColor whiteColor];
     textView.delegate = self;
     [self.view addSubview:textView];
+    
+    
     self.view.backgroundColor = [UIColor grayColor];
     
-    //JiebaInit("123", "123")
     NSString *dictPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"iosjieba.bundle/dict/jieba.dict.small.utf8"];
     NSString *hmmPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"iosjieba.bundle/dict/hmm_model.utf8"];
     NSString *userDictPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"iosjieba.bundle/dict/user.dict.utf8"];
@@ -60,6 +72,9 @@
     [super touchesBegan:touches withEvent:event];
 }
 
+- (BOOL)becomeFirstResponder {
+    return YES;
+}
 
 - (BOOL)textViewShouldBeginEditing:(UITextView *)textView{
     NSLog(@"textViewShouldBeginEditing:");
@@ -76,10 +91,11 @@
     NSLog(@"textViewShouldEndEditing:");
     //textView.backgroundColor = [UIColor whiteColor];
     const char* sentence = [textView.text UTF8String];
-    std::vector<std::string>& words;
+    std::vector<std::string> words;
     JiebaCut(sentence, words);
-    
-    textView.text = @"ok";
+    std::string result;
+    result << words;
+    textView.text = [NSString stringWithUTF8String:result.c_str()] ;
     return YES;
 }
 
