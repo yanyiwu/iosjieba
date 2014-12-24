@@ -14,6 +14,7 @@
 		89599B9C1A49B7100035E27D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89599B9B1A49B7100035E27D /* Images.xcassets */; };
 		89599B9F1A49B7110035E27D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89599B9D1A49B7100035E27D /* LaunchScreen.xib */; };
 		89599BAB1A49B7110035E27D /* iosjiebaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 89599BAA1A49B7110035E27D /* iosjiebaTests.m */; };
+		89599BD61A4A55A60035E27D /* Segmentor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89599BD41A4A55A60035E27D /* Segmentor.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,38 @@
 		89599BA41A49B7110035E27D /* iosjiebaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iosjiebaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89599BA91A49B7110035E27D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89599BAA1A49B7110035E27D /* iosjiebaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iosjiebaTests.m; sourceTree = "<group>"; };
+		89599BB51A4A54DC0035E27D /* DictTrie.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DictTrie.hpp; sourceTree = "<group>"; };
+		89599BB61A4A54DC0035E27D /* FullSegment.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FullSegment.hpp; sourceTree = "<group>"; };
+		89599BB71A4A54DC0035E27D /* HMMSegment.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = HMMSegment.hpp; sourceTree = "<group>"; };
+		89599BB81A4A54DC0035E27D /* ISegment.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ISegment.hpp; sourceTree = "<group>"; };
+		89599BB91A4A54DC0035E27D /* KeywordExtractor.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = KeywordExtractor.hpp; sourceTree = "<group>"; };
+		89599BBB1A4A54DC0035E27D /* ArgvContext.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ArgvContext.hpp; sourceTree = "<group>"; };
+		89599BBC1A4A54DC0035E27D /* BlockingQueue.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BlockingQueue.hpp; sourceTree = "<group>"; };
+		89599BBD1A4A54DC0035E27D /* BoundedQueue.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BoundedQueue.hpp; sourceTree = "<group>"; };
+		89599BBE1A4A54DC0035E27D /* CastFloat.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CastFloat.hpp; sourceTree = "<group>"; };
+		89599BBF1A4A54DC0035E27D /* Condition.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Condition.hpp; sourceTree = "<group>"; };
+		89599BC01A4A54DC0035E27D /* Config.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Config.hpp; sourceTree = "<group>"; };
+		89599BC11A4A54DC0035E27D /* HandyMacro.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = HandyMacro.hpp; sourceTree = "<group>"; };
+		89599BC21A4A54DC0035E27D /* InitOnOff.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = InitOnOff.hpp; sourceTree = "<group>"; };
+		89599BC31A4A54DC0035E27D /* LocalVector.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LocalVector.hpp; sourceTree = "<group>"; };
+		89599BC41A4A54DC0035E27D /* Logger.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Logger.hpp; sourceTree = "<group>"; };
+		89599BC51A4A54DC0035E27D /* Md5.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Md5.hpp; sourceTree = "<group>"; };
+		89599BC61A4A54DC0035E27D /* MutexLock.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MutexLock.hpp; sourceTree = "<group>"; };
+		89599BC71A4A54DC0035E27D /* MysqlClient.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MysqlClient.hpp; sourceTree = "<group>"; };
+		89599BC81A4A54DC0035E27D /* NonCopyable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NonCopyable.hpp; sourceTree = "<group>"; };
+		89599BC91A4A54DC0035E27D /* StdExtension.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = StdExtension.hpp; sourceTree = "<group>"; };
+		89599BCA1A4A54DC0035E27D /* StringUtil.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = StringUtil.hpp; sourceTree = "<group>"; };
+		89599BCB1A4A54DC0035E27D /* Thread.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Thread.hpp; sourceTree = "<group>"; };
+		89599BCC1A4A54DC0035E27D /* ThreadPool.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ThreadPool.hpp; sourceTree = "<group>"; };
+		89599BCD1A4A54DC0035E27D /* MixSegment.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MixSegment.hpp; sourceTree = "<group>"; };
+		89599BCE1A4A54DC0035E27D /* MPSegment.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MPSegment.hpp; sourceTree = "<group>"; };
+		89599BCF1A4A54DC0035E27D /* PosTagger.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PosTagger.hpp; sourceTree = "<group>"; };
+		89599BD01A4A54DC0035E27D /* QuerySegment.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = QuerySegment.hpp; sourceTree = "<group>"; };
+		89599BD11A4A54DC0035E27D /* SegmentBase.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SegmentBase.hpp; sourceTree = "<group>"; };
+		89599BD21A4A54DC0035E27D /* TransCode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TransCode.hpp; sourceTree = "<group>"; };
+		89599BD31A4A54DC0035E27D /* Trie.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Trie.hpp; sourceTree = "<group>"; };
+		89599BD41A4A55A60035E27D /* Segmentor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Segmentor.cpp; path = ../Segmentor.cpp; sourceTree = "<group>"; };
+		89599BD51A4A55A60035E27D /* Segmentor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Segmentor.h; path = ../Segmentor.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +129,9 @@
 		89599B8E1A49B7100035E27D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				89599BD41A4A55A60035E27D /* Segmentor.cpp */,
+				89599BD51A4A55A60035E27D /* Segmentor.h */,
+				89599BB41A4A54DC0035E27D /* CppJieba */,
 				89599B8F1A49B7100035E27D /* Info.plist */,
 				89599B901A49B7100035E27D /* main.m */,
 			);
@@ -117,6 +153,51 @@
 				89599BA91A49B7110035E27D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		89599BB41A4A54DC0035E27D /* CppJieba */ = {
+			isa = PBXGroup;
+			children = (
+				89599BB51A4A54DC0035E27D /* DictTrie.hpp */,
+				89599BB61A4A54DC0035E27D /* FullSegment.hpp */,
+				89599BB71A4A54DC0035E27D /* HMMSegment.hpp */,
+				89599BB81A4A54DC0035E27D /* ISegment.hpp */,
+				89599BB91A4A54DC0035E27D /* KeywordExtractor.hpp */,
+				89599BBA1A4A54DC0035E27D /* Limonp */,
+				89599BCD1A4A54DC0035E27D /* MixSegment.hpp */,
+				89599BCE1A4A54DC0035E27D /* MPSegment.hpp */,
+				89599BCF1A4A54DC0035E27D /* PosTagger.hpp */,
+				89599BD01A4A54DC0035E27D /* QuerySegment.hpp */,
+				89599BD11A4A54DC0035E27D /* SegmentBase.hpp */,
+				89599BD21A4A54DC0035E27D /* TransCode.hpp */,
+				89599BD31A4A54DC0035E27D /* Trie.hpp */,
+			);
+			path = CppJieba;
+			sourceTree = "<group>";
+		};
+		89599BBA1A4A54DC0035E27D /* Limonp */ = {
+			isa = PBXGroup;
+			children = (
+				89599BBB1A4A54DC0035E27D /* ArgvContext.hpp */,
+				89599BBC1A4A54DC0035E27D /* BlockingQueue.hpp */,
+				89599BBD1A4A54DC0035E27D /* BoundedQueue.hpp */,
+				89599BBE1A4A54DC0035E27D /* CastFloat.hpp */,
+				89599BBF1A4A54DC0035E27D /* Condition.hpp */,
+				89599BC01A4A54DC0035E27D /* Config.hpp */,
+				89599BC11A4A54DC0035E27D /* HandyMacro.hpp */,
+				89599BC21A4A54DC0035E27D /* InitOnOff.hpp */,
+				89599BC31A4A54DC0035E27D /* LocalVector.hpp */,
+				89599BC41A4A54DC0035E27D /* Logger.hpp */,
+				89599BC51A4A54DC0035E27D /* Md5.hpp */,
+				89599BC61A4A54DC0035E27D /* MutexLock.hpp */,
+				89599BC71A4A54DC0035E27D /* MysqlClient.hpp */,
+				89599BC81A4A54DC0035E27D /* NonCopyable.hpp */,
+				89599BC91A4A54DC0035E27D /* StdExtension.hpp */,
+				89599BCA1A4A54DC0035E27D /* StringUtil.hpp */,
+				89599BCB1A4A54DC0035E27D /* Thread.hpp */,
+				89599BCC1A4A54DC0035E27D /* ThreadPool.hpp */,
+			);
+			path = Limonp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +302,7 @@
 			files = (
 				89599B971A49B7100035E27D /* ViewController.m in Sources */,
 				89599B941A49B7100035E27D /* AppDelegate.m in Sources */,
+				89599BD61A4A55A60035E27D /* Segmentor.cpp in Sources */,
 				89599B911A49B7100035E27D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
