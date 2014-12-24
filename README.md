@@ -8,10 +8,16 @@
 
 ## 用法
 
+启动后在框里面输入待分词的句子，然后按回车键即可。
+
 ![image](https://github.com/aszxqw/iosjieba/raw/master/screenshots/welcome.png)
 
 ![image](https://github.com/aszxqw/iosjieba/raw/master/screenshots/demo1.jpg)
 ![image](https://github.com/aszxqw/iosjieba/raw/master/screenshots/demo2.jpg)
+
+## 致谢
+
+感谢 [fxjsy] 的结巴中文分词 [jieba] 。
 
 ## 客服
 
@@ -19,3 +25,5 @@
 
 
 [CppJieba]:http://github.com/aszxqw/cppjieba
+[jieba]:https://github.com/fxsjy/jieba
+[fxsjy]:https://github.com/fxsjy
