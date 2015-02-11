@@ -10,10 +10,10 @@
 
 启动后在框里面输入待分词的句子，然后按回车键即可。
 
-![image](https://github.com/aszxqw/iosjieba/raw/master/screenshots/welcome.png)
+![image](https://github.com/yanyiwu/iosjieba/raw/master/screenshots/welcome.png)
 
-![image](https://github.com/aszxqw/iosjieba/raw/master/screenshots/demo1.jpg)
-![image](https://github.com/aszxqw/iosjieba/raw/master/screenshots/demo2.jpg)
+![image](https://github.com/yanyiwu/iosjieba/raw/master/screenshots/demo1.jpg)
+![image](https://github.com/yanyiwu/iosjieba/raw/master/screenshots/demo2.jpg)
 
 ## 致谢
 
@@ -24,6 +24,6 @@
 > - i@yanyiwu.com
 
 
-[CppJieba]:http://github.com/aszxqw/cppjieba
+[CppJieba]:http://github.com/yanyiwu/cppjieba
 [jieba]:https://github.com/fxsjy/jieba
 [fxsjy]:https://github.com/fxsjy
