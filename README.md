@@ -1,5 +1,8 @@
 # iosjieba 
 
+[![Author](https://img.shields.io/badge/author-@yanyiwu-blue.svg?style=flat)](http://yanyiwu.com/) 
+[![License](https://img.shields.io/badge/license-MIT-yellow.svg?style=flat)](http://yanyiwu.mit-license.org)
+
 ## 简介
 
 结巴中文分词的 iOS 版本。
