@@ -34,5 +34,4 @@
 [fxsjy]:https://github.com/fxsjy
 
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/yanyiwu/iosjieba/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
